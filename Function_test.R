@@ -20,3 +20,6 @@ generateY <- function(X, beta, sigma, seed = 5832652){
   return(Y)
 }
 
+X1=c(1,2,3,4)
+generateY(X1,beta=2,sigma=0.5)
+
