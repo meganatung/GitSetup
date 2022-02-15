@@ -15,8 +15,8 @@ generateY <- function(X, beta, sigma, seed = 5832652){
   set.seed(seed)
   
   n=length(X)
+  Y=X*beta + rnorm(n, 0, sigma)
   # Return Y
   return(Y)
 }
-
 
