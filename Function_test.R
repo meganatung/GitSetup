@@ -15,11 +15,11 @@ generateY <- function(X, beta, sigma, seed = 5832652){
   set.seed(seed)
   
   n=length(X)
-  Y=X*beta + rnorm(n, 0, sigma)
+  Y=X%*%beta + rnorm(n, 0, sigma)
   # Return Y
   return(Y)
 }
 
 # X1=c(1,2,3,4)
-# generateY(X1,beta=2,sigma=0.5)
+# generateY(X1,beta=2,sigma=0.5, seed=4)
 
